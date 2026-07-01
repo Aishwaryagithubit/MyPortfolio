@@ -1,0 +1,73 @@
+{
+  "greetings": ["hi","hello","hey","good morning","good evening","hii","helo","hai","sup","what's up","yo"],
+  "responses": [
+    {
+      "id": "greeting",
+      "triggers": ["hi","hello","hey","good morning","good evening","hii","helo","hai","sup","what's up","yo"],
+      "reply": "Hey there! 👋 I'm Aishwarya's AI assistant. I can tell you about her skills, projects, experience, or how to get in touch. What would you like to know?",
+      "chips": ["Her skills 🛠️","Projects 📊","Experience 💼","Contact her 📬"]
+    },
+    {
+      "id": "skills",
+      "triggers": ["skill","skills","tech","stack","tools","know","can do","expertise","technology","programming","language","languages"],
+      "reply": "Aishwarya's toolkit spans the full data pipeline:\n\n📊 Data Analysis: Python, Pandas, NumPy, Excel\n📈 Visualization: Tableau, Matplotlib, Seaborn\n🤖 ML/AI: scikit-learn, Predictive Modelling, Feature Engineering\n🗄️ Databases: SQL, MySQL, PostgreSQL\n☁️ Cloud: AWS Fundamentals, Oracle OCI AI Foundations\n🔧 Tools: Git, Jupyter, Google Colab, Postman",
+      "chips": ["Her projects 📁","Work experience 🏢","Certifications 🏆"]
+    },
+    {
+      "id": "projects",
+      "triggers": ["project","projects","work","portfolio","built","made","created","build","github"],
+      "reply": "Here are Aishwarya's key data projects:\n\n🔴 Churn & Retention Intelligence Engine — ML model predicting at-risk customers\n🟠 Superstore Sales Analysis — Interactive Tableau BI dashboard\n🟡 Deloitte Machine Downtime Dashboard — Tableau + Excel data viz simulation\n🟢 Brain Tumor Detection — scikit-learn classification on medical imaging\n🔵 Drought Prediction System — ML environmental forecasting\n🟣 Promptly — AI caption generator using Gemini API\n\nWant to explore any of these?",
+      "chips": ["Churn project 🔴","Data dashboards 📈","ML projects 🤖","View GitHub →"]
+    },
+    {
+      "id": "churn",
+      "triggers": ["churn","retention","customer","customer analytics"],
+      "reply": "The Churn & Retention Intelligence Engine is one of Aishwarya's flagship ML projects. It uses behavioral and transaction data to predict which customers are likely to leave, and surfaces the key drivers behind churn so businesses can act proactively. Built with Python, Pandas, scikit-learn, and feature engineering techniques. 🔗 You can find it on her GitHub: github.com/Aishwaryagithubit/Churn-Retention-Intelligence-Engine",
+      "chips": ["Other ML projects 🤖","Contact her 📬"]
+    },
+    {
+      "id": "experience",
+      "triggers": ["experience","work","job","internship","intern","company","employer","worked","career"],
+      "reply": "Aishwarya's professional highlights:\n\n⭐ Data Visualization Associate Intern @ Saint Louis University (US, Remote) — awarded $1000 Star Performer scholarship\n🌍 Nobel Global Intern @ Nobel Learning PBC — workshops for international learners\n🏆 Hult Prize Campus Runner-Up 2026\n🎓 HPAIR 2025 Delegate (Harvard Project for Asian & International Relations)\n🤖 AIDA Hackathon Semifinalist — designed HearMe, an emotional AI for deaf users",
+      "chips": ["Her skills 🛠️","Education 🎓","Contact her 📬"]
+    },
+    {
+      "id": "education",
+      "triggers": ["education","study","degree","university","college","gpa","academic","qualification","graduate"],
+      "reply": "Aishwarya is studying BSc (Hons.) Computing at The British College, affiliated with Leeds Beckett University 🎓. She's maintaining a strong GPA of 3.8/4.0. Her coursework covers data science, machine learning, databases, algorithms and software engineering.",
+      "chips": ["Her projects 📁","Certifications 🏆","Skills 🛠️"]
+    },
+    {
+      "id": "certifications",
+      "triggers": ["certif","certification","award","badge","oracle","aws","deloitte","achievement","achievements"],
+      "reply": "Aishwarya holds:\n\n☁️ AWS Cloud Fundamentals certificate\n🔮 Oracle OCI AI Foundations certificate\n📊 Deloitte Data Analytics Virtual Job Simulation\n⭐ $1000 Star Performer Award — Saint Louis University\n🏅 AIDA Hackathon Semifinalist\n🎖️ Hult Prize Campus Runner-Up 2026",
+      "chips": ["View projects 📁","Contact her 📬"]
+    },
+    {
+      "id": "contact",
+      "triggers": ["contact","hire","reach","email","whatsapp","message","talk","connect","available","opportunity","job","offer","recruiter"],
+      "reply": "You can reach Aishwarya through:\n\n📧 Email: aishwaryasah25@gmail.com\n📱 WhatsApp: +977 9817835460\n🔗 LinkedIn: linkedin.com/in/aishwarya-sah-16580b28b\n💻 GitHub: github.com/Aishwaryagithubit\n\nShe's actively open to Data Analyst, Data Science, and Data Engineering roles! 🚀",
+      "chips": ["Download CV 📄","Her skills 🛠️","View projects 📁"]
+    },
+    {
+      "id": "cv",
+      "triggers": ["cv","resume","download","pdf"],
+      "reply": "You can download Aishwarya's latest CV right from the top of the page — just click the <strong>Résumé ↓</strong> button in the nav bar, or use this link: <a href='AishwaryaSah-CV.pdf' download style='color:var(--teal)'>Download CV</a> 📄",
+      "chips": ["Her skills 🛠️","Contact her 📬"]
+    },
+    {
+      "id": "location",
+      "triggers": ["where","location","country","nepal","kathmandu","remote","relocate"],
+      "reply": "Aishwarya is based in Kathmandu, Nepal 🇳🇵. She's open to remote roles globally and is also open to relocation for the right opportunity. Her current internship with Saint Louis University (USA) is fully remote, so she's well-experienced with distributed teams.",
+      "chips": ["Contact her 📬","Her experience 💼"]
+    },
+    {
+      "id": "data_role",
+      "triggers": ["data science","data analyst","data engineer","analytics","analyst","scientist","engineer","ml engineer"],
+      "reply": "Aishwarya is actively seeking roles in:\n\n📊 Data Analyst — dashboard creation, EDA, SQL, Tableau\n🤖 Data Scientist — ML modelling, predictive analytics, Python/scikit-learn\n🔧 Data Engineer — ETL pipelines, SQL databases, data architecture\n\nShe brings project experience across healthcare, retail, climate, and customer analytics domains. Want to get in touch?",
+      "chips": ["Contact her 📬","Download CV 📄","View projects 📁"]
+    }
+  ],
+  "fallback": "Hmm, I'm not sure about that one! 🤔 Try asking about Aishwarya's skills, projects, experience, or how to contact her. Or scroll through the portfolio above!",
+  "fallbackChips": ["Her skills 🛠️","Projects 📊","Experience 💼","Contact her 📬"]
+}
