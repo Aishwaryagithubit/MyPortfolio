@@ -2884,4 +2884,15 @@ footer small{
     }
 }
 
+/* ONLY FIX GITHUB + WHATSAPP ICONS */
 
+a[href*="github"] svg,
+a[href*="wa.me"] svg,
+a[href*="whatsapp"] svg {
+    display: block !important;
+    width: 14px !important;
+    height: 14px !important;
+    fill: currentColor !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+}

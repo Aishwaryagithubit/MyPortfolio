@@ -72,3 +72,27 @@ $$("a[href^='#']").forEach(a=>a.addEventListener("click",e=>{
   if(target){e.preventDefault();target.scrollIntoView({behavior:"smooth"})}
 }));
 
+document.addEventListener("DOMContentLoaded", () => {
+
+    // GitHub icon
+    document.querySelectorAll('a[href*="github"]').forEach(link => {
+        link.innerHTML = `
+            <svg viewBox="0 0 24 24" width="14" height="14">
+                <path fill="currentColor"
+                    d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.57.1.78-.25.78-.55v-2.15c-3.2.7-3.87-1.55-3.87-1.55-.52-1.33-1.28-1.68-1.28-1.68-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.02 1.75 2.68 1.25 3.33.96.1-.74.4-1.25.73-1.54-2.55-.29-5.23-1.28-5.23-5.7 0-1.26.45-2.29 1.18-3.1-.12-.29-.51-1.46.11-3.05 0 0 .96-.31 3.15 1.18a10.9 10.9 0 0 1 5.74 0c2.19-1.49 3.15-1.18 3.15-1.18.62 1.59.23 2.76.11 3.05.73.81 1.18 1.84 1.18 3.1 0 4.43-2.69 5.4-5.25 5.69.41.36.78 1.07.78 2.16v3.2c0 .31.21.66.79.55C20.22 21.39 23.5 17.08 23.5 12 23.5 5.65 18.35.5 12 .5z"/>
+            </svg>
+        `;
+    });
+
+
+    // WhatsApp icon
+    document.querySelectorAll('a[href*="wa.me"], a[href*="whatsapp"]').forEach(link => {
+        link.innerHTML = `
+            <svg viewBox="0 0 24 24" width="14" height="14">
+                <path fill="currentColor"
+                    d="M20.52 3.48A11.86 11.86 0 0 0 12.04 0C5.48 0 .14 5.34.14 11.9c0 2.1.55 4.15 1.6 5.96L.04 24l6.28-1.65a11.88 11.88 0 0 0 5.72 1.46h.01c6.56 0 11.9-5.34 11.9-11.9 0-3.18-1.24-6.17-3.43-8.43z"/>
+            </svg>
+        `;
+    });
+
+});
