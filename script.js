@@ -42,7 +42,14 @@ $("#contactForm").onsubmit=e=>{
   const f=e.currentTarget;
   const subject=encodeURIComponent("Portfolio Contact — Aishwarya Sah");
   const body=encodeURIComponent(`Name: ${f.name.value}\nEmail: ${f.email.value}\n\n${f.message.value}`);
-  location.href=`mailto:aishwaryasah25@gmail.com?subject=${subject}&body=${body}`;
+  const mailtoLink=`mailto:aishwaryasah25@gmail.com?subject=${subject}&body=${body}`;
+  const a=document.createElement("a");
+  a.href=mailtoLink;
+  a.style.display="none";
+  document.body.appendChild(a);
+  a.click();
+  a.remove();
+  f.reset();
 };
 
 const responses=[
@@ -74,8 +81,8 @@ $$("a[href^='#']").forEach(a=>a.addEventListener("click",e=>{
 
 document.addEventListener("DOMContentLoaded", () => {
 
-    // GitHub icon
-    document.querySelectorAll('a[href*="github"]').forEach(link => {
+    // GitHub icon (header socials + footer contact icons only — leave project links as text)
+    document.querySelectorAll('.socials a[href*="github"], .contact-icons a[href*="github"]').forEach(link => {
         link.innerHTML = `
             <svg viewBox="0 0 24 24" width="14" height="14">
                 <path fill="currentColor"
